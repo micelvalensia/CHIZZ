@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body{
+  background-color: #FAEAD0;
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 2px #564C3F; /* Stroke hitam */
+  }
+}
