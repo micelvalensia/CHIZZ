@@ -7,18 +7,18 @@ function Navbar() {
     const list = ['Home', 'About', 'Categories', 'Contact'];
 
   return (
-    <div className='w-full'>
+    <div className='w-full overflow-hidden'>
         <div className="mx-auto w-[90%] flex items-center justify-between pt-8">
-            <div className="relative">
-                <div className="absolute w-[260%] left-[-100px] lg:left-[-160px] h-full z-[-1] bg-[#FFBC0F] rounded-full"></div>
-                <h2 className='font-extrabold text-[2rem] lg:text-[3rem]'>CHIZ</h2>
+            <div className="relative order-2 lg:order-1">
+                <div className="absolute w-[260%] right-[-170px] lg:left-[-250px] h-full z-[-1] bg-[#FFBC0F] rounded-full"></div>
+                <img src="./logoutama.png" alt="logo" className='w-[128px] h-[80px] lg:h-[100px] lg:w-full object-center object-cover' />
             </div>
-            <nav className="hidden md:block w-[80%]">
+            <nav className="hidden order-3   md:block w-[80%]">
                 <ul className='flex justify-around'>
                     {list.map((items, id) => (
                         <li key={id}>
                             <motion.a 
-                            href={`#${items}`} 
+                            href={`#${items.toLowerCase()}`} 
                             layout 
                             onClick={() => setActive(items)}
                             whileHover={{ x: 10 }} // Geser teks saat hover
@@ -35,7 +35,7 @@ function Navbar() {
                     ))}
                 </ul>
             </nav>
-            <nav className='md:hidden'>
+            <nav className='md:hidden order-1 md:order-2'>
                 <Icons />
             </nav>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Icons({ onClick }) {
@@ -8,6 +8,18 @@ function Icons({ onClick }) {
     setIsOpen(!isOpen);
     if (onClick) onClick();
   };
+
+  useEffect(() => {
+    if (isOpen) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
+    
+    return () => {
+        document.body.style.overflow = "auto"; // Reset kalau komponen unmount
+    };
+}, [isOpen]);
 
   const list = ['Home', 'About', 'Categories', 'Contact']
 
@@ -54,7 +66,7 @@ function Icons({ onClick }) {
                 animate={{y: 0}}
                 exit={{y: -1000}}
                 transition={{duration: 0.5}}
-                className="fixed z-[99] backdrop-blur-3xl w-full h-screen top-0 left-0 shadow-lg">
+                className="fixed z-[99] backdrop-blur-3xl w-full h-[100vh] top-0 left-0 shadow-lg">
                     <ul className="w-full h-full flex flex-col justify-evenly items-center">
                         {list.map((items, i) => (
                             <motion.li 
@@ -65,7 +77,7 @@ function Icons({ onClick }) {
                                 padding: '8px', 
                                 paddingLeft: '20px', 
                                 paddingRight: '20px',
-                                color: 'white'}} href={`#${items}`} onClick={() => setIsOpen(false)} className="text-2xl w-full h-full font-semibold text-[#656565]">{items}</motion.a>
+                                color: '#ffffff'}} href={`#${items.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-2xl w-full h-full font-semibold text-[#656565]">{items}</motion.a>
                             </motion.li>
                         ))}
                     </ul>
