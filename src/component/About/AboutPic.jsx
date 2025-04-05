@@ -19,7 +19,7 @@ function AboutPic() {
         initial={{ y: 110, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2, ease: "easeInOut" }} // Bikin fade-in lebih lambat
-        className="w-full h-full flex justify-center items-center relative"
+        className="w-full h-full flex relative"
       >
         <div className="relative h-full w-full flex items-center justify-center">
           {/* Emoji 🧀 di belakang gambar */}
@@ -33,12 +33,12 @@ function AboutPic() {
           </motion.div>
 
           {/* Elemen background lingkaran */}
-          <div className="absolute bg-[#FFBC0F] w-[76%] h-[70%] left-[35px] top-0 lg:top-[50px] lg:left-[65px] rounded-full border-[15px] border-solid border-white"></div>
+          <div className="absolute mt-10 md:mt-0 bg-[#FFBC0F] w-[76%] h-[70%] left-[35px] top-0 lg:top-[50px] lg:left-[65px] rounded-full border-[15px] border-solid border-white"></div>
 
           {/* Gambar */}
           <motion.img
             src="./logo.png"
-            className="w-full h-full relative"
+            className="w-full h-full relative mt-10 md:mt-0"
             alt="logo"
             style={{ x: transformX, rotate: transformRotate, scale }}
             transition={{ duration: 3, ease: "easeInOut" }} // Pergerakan lebih lambat

@@ -21,4 +21,22 @@ body{
   .blur {
     background-color: rgba(255, 255, 255, 0.3);
   }
+  .bg-oren {
+    background-color: #FFBC0F;
+  }
+  .text-oren {
+    color: #FFBC0F;
+  }
+  .bg-coklat {
+    background-color: #564C3F;
+  }
+  .text-coklat {
+    color: #564C3F;
+  }
+}
+
+@layer components {
+  .judul{
+    @apply text-[#564C3F] font-extrabold text-3xl md:text-6xl text-center;
+  }
 }
