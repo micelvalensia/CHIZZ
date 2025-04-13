@@ -12,6 +12,7 @@ function Contact() {
         y: 0,
         opacity: 1
       }} 
+      viewport={{once:true }}
       transition={{duration: 1.2 , ease: "easeInOut"}}
       className='judul'>Contact Us</motion.h2>
       <ContactForm />

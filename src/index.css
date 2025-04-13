@@ -42,4 +42,10 @@ body{
   .contact-formt{
     @apply block font-bold text-gray-800 mb-1 text-left md:text-2xl;
   }
+  .footer-title{
+    @apply font-bold text-lg mb-3 md:text-2xl lg:text-4xl
+  }
+  .footer-size-text{
+    @apply flex items-center space-x-2 text-lg
+  }
 }
