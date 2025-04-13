@@ -37,6 +37,6 @@ body{
 
 @layer components {
   .judul{
-    @apply text-[#564C3F] font-extrabold text-3xl md:text-6xl text-center;
+    @apply text-[#564C3F] font-extrabold text-3xl md:text-5xl lg:text-6xl text-center;
   }
 }

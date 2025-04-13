@@ -72,7 +72,7 @@ function ProductSlide() {
         >
           {/** Slider yang udah di filter */}
           {filtered.map((product, index) => (
-            <SwiperSlide key={product.id || product.name}>
+            <SwiperSlide key={product.id}>
               <div className="w-full flex justify-center items-end relative min-h-[400px] md:min-h-[480px]">
                 <div
                   className={`relative flex flex-col transition-all duration-300 rounded-2xl shadow-lg hover:shadow-2xl p-4 sm:p-6 md:p-8 max-w-[80%] sm:max-w-xs md:max-w-sm 

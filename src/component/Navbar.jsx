@@ -9,9 +9,24 @@ function Navbar() {
   return (
     <div className='w-full overflow-hidden'>
         <div className="mx-auto w-[90%] flex items-center justify-between pt-8">
-            <div className="relative order-2 lg:order-1">
-                <div className="absolute w-[260%] right-[-170px] lg:left-[-250px] h-full z-[-1] bg-[#FFBC0F] rounded-full"></div>
-                <img src="./logoutama.png" alt="logo" className='w-[128px] h-[80px] lg:h-[100px] lg:w-full object-center object-cover' />
+        <div className="relative order-2 lg:order-1 flex items-center">
+        {/* Background circle with responsive sizing */}
+         <div 
+            className="absolute 
+                        w-[260%] sm:w-[220%] md:w-[165%] lg:w-[260%]
+                        right-[-170px] sm:right-[-150px] md:left-[-100px] lg:left-[-250px]
+                        h-full z-[-1] bg-[#FFBC0F] rounded-full"
+            ></div>
+            
+            {/* Logo with responsive sizing and left overflow at md breakpoint */}
+            <img 
+                src="./logoutama.png" 
+                alt="logo" 
+                className="w-[128px] sm:w-[150px] md:w-[180px] lg:w-full
+                        h-[80px] sm:h-[85px] md:h-[95px] lg:h-[100px]
+                        object-center object-cover
+                        md:-ml-6"
+            />
             </div>
             <nav className="hidden order-3   md:block w-[80%]">
                 <ul className='flex justify-around'>
