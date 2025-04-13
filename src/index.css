@@ -39,4 +39,7 @@ body{
   .judul{
     @apply text-[#564C3F] font-extrabold text-3xl md:text-5xl lg:text-6xl text-center;
   }
+  .contact-formt{
+    @apply block font-bold text-gray-800 mb-1 text-left md:text-2xl;
+  }
 }
