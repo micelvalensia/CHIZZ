@@ -4,7 +4,7 @@
 
 ## 📄 Deskripsi
 
-Landing page ini dibuat untuk kebutuhan showcase UI/UX dengan konten fiktif. Meskipun produknya tidak nyata, desain dan strukturnya meniru landing page profesional, lengkap dengan beberapa section:
+Landing page ini dibuat untuk kebutuhan showcase UI/UX dengan konten fiktif. Meskipun produknya tidak nyata, desain dan strukturnya meniru landing page sederhana, lengkap dengan beberapa section:
 
 ## 🧩 Halaman
 
@@ -16,8 +16,8 @@ Landing page ini dibuat untuk kebutuhan showcase UI/UX dengan konten fiktif. Mes
 ## ⚙️ Teknologi yang Digunakan
 
 - **React.js** – Library utama untuk membangun UI.
-- **Vite / CRA** – *(opsional, sesuaikan dengan yang kamu pakai)* untuk build tool dan environment.
-- **CSS / TailwindCSS** – Untuk styling.
+- **Vite** – untuk build tool dan environment.
+- **TailwindCSS** – Untuk styling.
 - **Responsive Design** – Layout fleksibel di semua ukuran layar.
 
 ## 🚀 Cara Menjalankan
